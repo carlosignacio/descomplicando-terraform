@@ -14,8 +14,8 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "Hello, %{ if var.name == "gomex" } ${var.name} %{ else }nao valeu %{ endif }!"
-    #Name = "HelloWorld ${var.name}"
-    #Env  = var.environment
+    #Name = "Hello, %{ if var.name == "gomex" } ${var.name} %{ else }nao valeu %{ endif }!"
+    Name = "HelloWorld ${var.name}"
+    Env  = var.environment
   }
 }
