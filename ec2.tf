@@ -15,7 +15,8 @@ resource "aws_instance" "web" {
 
   tags = {
     #Name = "Hello, %{ if var.name == "gomex" } ${var.name} %{ else }nao valeu %{ endif }!"
-    Name = "HelloWorld ${var.name}"
-    Env  = var.environment
+    #Name = "HelloWorld ${var.name}"
+    Name = "HelloWorld"
+    #Env  = var.environment
   }
 }
